@@ -1,5 +1,6 @@
 package com.seckill.web.controller;
 
+import com.seckill.entity.vo.ReturnMsgVo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,7 @@ public class OrderController {
     /**
      * create order
      *
-     * @return
+     * @return request id
      */
     @RequestMapping("seckill/createOrder")
     public ReturnMsgVo createOrder() {
@@ -22,9 +23,9 @@ public class OrderController {
     }
 
     /**
-     * get create order result, other request sent by front end to get result
+     * async, get create order result, other request sent by front end to get result based on order id
      *
-     * @return
+     * @return create order result
      */
     @RequestMapping("seckill/queryCreateOrderResult")
     public ReturnMsgVo queryCreateOrderResult() {
@@ -34,7 +35,7 @@ public class OrderController {
     /**
      * query item info
      *
-     * @return
+     * @return item basic info
      */
     @RequestMapping("seckill/queryItem")
     public ReturnMsgVo queryItem() {

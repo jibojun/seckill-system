@@ -1,4 +1,4 @@
-package com.seckill.common.bo;
+package com.seckill.entity.bo;
 
 import java.math.BigDecimal;
 

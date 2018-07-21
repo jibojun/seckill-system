@@ -13,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class WebVisitInterceptor implements HandlerInterceptor {
 
-    public boolean preHandle(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response, Object handler) {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
+        //TODO:use UID to determine same account, return same page in a short interval
+        //TODO:in short interval, queries for same interval, return same page
         return false;
     }
 

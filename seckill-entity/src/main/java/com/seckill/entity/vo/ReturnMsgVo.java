@@ -1,4 +1,4 @@
-package com.seckill.common.vo;
+package com.seckill.entity.vo;
 
 /**
  * @Author: Bojun Ji

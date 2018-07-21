@@ -1,5 +1,8 @@
 package com.seckill.service.impl;
 
+import com.seckill.entity.input.CreateOrderInput;
+import com.seckill.entity.input.QueryCreateOrderResultInput;
+import com.seckill.entity.vo.ReturnMsgVo;
 import com.seckill.service.CreateOrder;
 
 /**
@@ -8,11 +11,12 @@ import com.seckill.service.CreateOrder;
  * @Date: 2018/7/22_2:01 AM
  */
 public class CreateOrderImpl implements CreateOrder {
-    public void createOrder() {
 
+    public ReturnMsgVo createOrder(CreateOrderInput input) {
+        return null;
     }
 
-    public boolean getCreateOrderResult() {
-        return false;
+    public ReturnMsgVo getCreateOrderResult(QueryCreateOrderResultInput input) {
+        return null;
     }
 }
