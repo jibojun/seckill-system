@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2018/7/15_11:14 PM
  */
 @RestController
+@RequestMapping("/seckill")
 public class OrderController {
 
     /**
@@ -17,7 +18,7 @@ public class OrderController {
      *
      * @return request id
      */
-    @RequestMapping("seckill/createOrder")
+    @RequestMapping("/createOrder")
     public ReturnMsgVo createOrder() {
         return null;
     }
@@ -27,8 +28,8 @@ public class OrderController {
      *
      * @return create order result
      */
-    @RequestMapping("seckill/queryCreateOrderResult")
-    public ReturnMsgVo queryCreateOrderResult() {
+    @RequestMapping("/queryOrderDetail")
+    public ReturnMsgVo queryOrderDetail() {
         return null;
     }
 
@@ -37,7 +38,7 @@ public class OrderController {
      *
      * @return item basic info
      */
-    @RequestMapping("seckill/queryItem")
+    @RequestMapping("/queryItem")
     public ReturnMsgVo queryItem() {
         return null;
     }
