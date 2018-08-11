@@ -1,7 +1,7 @@
 package com.seckill.service;
 
 import com.seckill.entity.input.CreateOrderInput;
-import com.seckill.entity.input.QueryCreateOrderResultInput;
+import com.seckill.entity.input.QueryOrderDetailInput;
 import com.seckill.entity.vo.ReturnMsgVo;
 
 /**
@@ -16,10 +16,10 @@ public interface CreateOrder {
     ReturnMsgVo createOrder(CreateOrderInput input);
 
     /**
-     * get result of order creating
+     * get order detail
      *
      * @return
      */
-    ReturnMsgVo getCreateOrderResult(QueryCreateOrderResultInput input);
+    ReturnMsgVo queryOrderDetail(QueryOrderDetailInput input);
 
 }
