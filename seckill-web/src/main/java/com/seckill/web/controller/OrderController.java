@@ -1,7 +1,7 @@
 package com.seckill.web.controller;
 
 import com.seckill.entity.vo.ReturnMsgVo;
-import com.seckill.service.ItemService;
+import com.seckill.service.ProductService;
 import com.seckill.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,7 @@ public class OrderController {
     private OrderService orderService;
 
     @Autowired
-    private ItemService itemService;
+    private ProductService productService;
 
     /**
      * create order

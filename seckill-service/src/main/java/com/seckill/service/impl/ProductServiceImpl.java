@@ -1,7 +1,7 @@
 package com.seckill.service.impl;
 
 import com.seckill.entity.vo.ReturnMsgVo;
-import com.seckill.service.ItemService;
+import com.seckill.service.ProductService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @Date: 2018/8/12_1:19 AM
  */
 @Service
-public class ItemServiceImpl implements ItemService {
+public class ProductServiceImpl implements ProductService {
     @Override
     public ReturnMsgVo queryItem(long itemId) {
         return null;
