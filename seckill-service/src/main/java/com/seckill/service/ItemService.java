@@ -7,6 +7,6 @@ import com.seckill.entity.vo.ReturnMsgVo;
  * @Description:
  * @Date: 2018/7/22_2:02 AM
  */
-public interface QueryItem {
+public interface ItemService {
     ReturnMsgVo queryItem(long itemId);
 }
