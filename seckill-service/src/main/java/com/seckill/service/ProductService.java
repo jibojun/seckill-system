@@ -8,5 +8,5 @@ import com.seckill.entity.vo.ReturnMsgVo;
  * @Date: 2018/7/22_2:02 AM
  */
 public interface ProductService {
-    ReturnMsgVo queryItem(long itemId);
+    ReturnMsgVo queryProduct(long productId);
 }
