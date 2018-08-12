@@ -26,6 +26,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ReturnMsgVo queryProduct(long productId) {
         ProductInfo productInfo = productService.queryProductInfo(productId);
+        if (productInfo != null) {
+
+        } else {
+
+        }
         return null;
     }
 }
