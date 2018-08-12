@@ -25,12 +25,17 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public ReturnMsgVo queryProduct(long productId) {
+        ReturnMsgVo<ProductInfo> tmpResult = new ReturnMsgVo<>();
         ProductInfo productInfo = productService.queryProductInfo(productId);
         if (productInfo != null) {
-
+            tmpResult.setErrorMessage(null);
+            tmpResult.setResponse(productInfo);
+            tmpResult.setResult(true);
         } else {
-
+            tmpResult.setErrorMessage(String.format("product: %s, get data failed", productId));
+            tmpResult.setResponse(null);
+            tmpResult.setResult(false);
         }
-        return null;
+        return tmpResult;
     }
 }
