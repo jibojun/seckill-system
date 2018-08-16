@@ -26,7 +26,7 @@ public class OrderController {
      *
      * @return request id
      */
-    @RequestMapping("/createOrder")
+    @RequestMapping("createOrder")
     public ReturnMsgVo createOrder() {
         return null;
     }
@@ -36,7 +36,7 @@ public class OrderController {
      *
      * @return create order result
      */
-    @RequestMapping("/queryOrderDetail")
+    @RequestMapping("queryOrderDetail")
     public ReturnMsgVo queryOrderDetail() {
         return null;
     }
@@ -46,7 +46,7 @@ public class OrderController {
      *
      * @return item basic info
      */
-    @RequestMapping("/queryItem")
+    @RequestMapping("queryItem")
     public ReturnMsgVo queryItem() {
         return null;
     }
