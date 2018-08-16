@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  * @Author: Bojun Ji
- * @Description:
+ * @Description: filter, use request wrapper
  * @Date: 2018/8/16_11:16 PM
  */
 public final class HttpRequestFilter extends OncePerRequestFilter {
