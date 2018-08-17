@@ -5,14 +5,15 @@ package com.seckill.entity.input;
  * @Description:
  * @Date: 2018/7/22_3:17 AM
  */
-public class QueryOrderDetailInput extends BaseInput{
-    private String requestId;
+public class QueryOrderDetailInput extends BaseInput {
+    private String orderId;
 
-    public String getRequestId() {
-        return requestId;
+
+    public String getOrderId() {
+        return orderId;
     }
 
-    public void setRequestId(String requestId) {
-        this.requestId = requestId;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 }
