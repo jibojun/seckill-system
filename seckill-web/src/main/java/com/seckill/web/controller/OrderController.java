@@ -1,9 +1,11 @@
 package com.seckill.web.controller;
 
+import com.seckill.entity.input.CreateOrderInput;
 import com.seckill.entity.vo.ReturnMsgVo;
 import com.seckill.service.ProductService;
 import com.seckill.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,10 +26,10 @@ public class OrderController {
     /**
      * create order
      *
-     * @return request id
+     * @return order id
      */
     @RequestMapping("createOrder")
-    public ReturnMsgVo createOrder() {
+    public ReturnMsgVo createOrder(@RequestBody CreateOrderInput createOrderInput) {
         return null;
     }
 
