@@ -1,6 +1,7 @@
 package com.seckill.web.controller;
 
 import com.seckill.entity.input.CreateOrderInput;
+import com.seckill.entity.input.QueryOrderDetailInput;
 import com.seckill.entity.vo.ReturnMsgVo;
 import com.seckill.service.ProductService;
 import com.seckill.service.OrderService;
@@ -39,7 +40,7 @@ public class OrderController {
      * @return create order result
      */
     @RequestMapping("queryOrderDetail")
-    public ReturnMsgVo queryOrderDetail() {
+    public ReturnMsgVo queryOrderDetail(@RequestBody QueryOrderDetailInput queryOrderDetailInput) {
         return null;
     }
 
