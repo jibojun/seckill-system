@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @Author: Bojun Ji
- * @Description: get product detail from interface
+ * @Description: get product detail from interface by RPC
  * @Date: 2018/8/12_1:19 AM
  */
 @Service
