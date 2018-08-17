@@ -1,5 +1,6 @@
 package com.seckill.service;
 
+import com.seckill.entity.input.QueryProductInput;
 import com.seckill.entity.vo.ReturnMsgVo;
 
 /**
@@ -8,5 +9,5 @@ import com.seckill.entity.vo.ReturnMsgVo;
  * @Date: 2018/7/22_2:02 AM
  */
 public interface ProductService {
-    ReturnMsgVo queryProduct(long productId);
+    ReturnMsgVo queryProduct(QueryProductInput queryProductInput);
 }
