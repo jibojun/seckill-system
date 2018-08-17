@@ -6,7 +6,7 @@ package com.seckill.entity.input;
  * @Date: 2018/7/22_3:16 AM
  */
 public class CreateOrderInput extends BaseInput {
-    private long itemId;
+    private String itemId;
     private int buyNumber;
 
     public int getBuyNumber() {
@@ -17,11 +17,12 @@ public class CreateOrderInput extends BaseInput {
         this.buyNumber = buyNumber;
     }
 
-    public long getItemId() {
+
+    public String getItemId() {
         return itemId;
     }
 
-    public void setItemId(long itemId) {
+    public void setItemId(String itemId) {
         this.itemId = itemId;
     }
 }
