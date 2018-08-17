@@ -5,7 +5,7 @@ package com.seckill.entity.input;
  * @Description:
  * @Date: 2018/8/17_11:08 PM
  */
-public class QueryItemInput {
+public class QueryItemInput extends BaseInput{
     private String itemId;
 
     public String getItemId() {
