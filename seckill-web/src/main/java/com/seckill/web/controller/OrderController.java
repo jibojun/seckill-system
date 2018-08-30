@@ -52,6 +52,6 @@ public class OrderController {
      */
     @RequestMapping("queryItem")
     public ReturnMsgVo queryItem(@RequestBody QueryProductInput queryProductInput) {
-        return productService.queryProduct(queryProductInput.getProductId());
+        return productService.queryProduct(queryProductInput);
     }
 }
