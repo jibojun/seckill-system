@@ -1,6 +1,6 @@
 package com.seckill.service.lock;
 
-import com.seckill.cache.redis.RedisUtil;
+import com.seckill.service.cache.redis.RedisUtil;
 
 import java.util.concurrent.TimeUnit;
 

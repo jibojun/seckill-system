@@ -1,4 +1,4 @@
-package com.seckill.cache.redis;
+package com.seckill.service.cache.redis;
 
 /**
  * @Author: Bojun Ji
