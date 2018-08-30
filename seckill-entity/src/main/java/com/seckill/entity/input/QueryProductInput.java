@@ -1,11 +1,14 @@
 package com.seckill.entity.input;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 /**
  * @Author: Bojun Ji
  * @Description:
  * @Date: 2018/8/17_11:08 PM
  */
-public class QueryProductInput extends BaseInput{
+public class QueryProductInput extends BaseInput {
+    @JSONField(name = "productId")
     private long productId;
 
 
