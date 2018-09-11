@@ -18,7 +18,7 @@ public interface IOrderService {
     ReturnMsgVo OrderCheck(QueryOrderDetailInput input);
 
     /**
-     * create order for successful seckill
+     * create order for successful seckill, async, send message to kafka
      */
     ReturnMsgVo createOrder(CreateOrderInput input);
 
