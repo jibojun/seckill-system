@@ -11,8 +11,8 @@
 
     <modules>
         <module>seckill-web</module>
-        <module>seckill-service</module>
-        <module>seckill-entity</module>
+        <module>seckill-biz</module>
+        <module>seckill-dto</module>
     </modules>
 
     <dependencies>
