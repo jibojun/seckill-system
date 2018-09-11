@@ -1,7 +1,6 @@
 package com.seckill.service;
 
 import com.seckill.entity.input.CreateOrderInput;
-import com.seckill.entity.input.QueryOrderDetailInput;
 import com.seckill.entity.vo.ReturnMsgVo;
 
 /**
@@ -15,7 +14,7 @@ public interface IOrderService {
      *
      * @return
      */
-    ReturnMsgVo OrderCheck(QueryOrderDetailInput input);
+    ReturnMsgVo OrderCheck(CreateOrderInput input);
 
     /**
      * create order for successful seckill, async, send message to kafka

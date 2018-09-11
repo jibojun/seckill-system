@@ -1,7 +1,6 @@
 package com.seckill.service.impl;
 
 import com.seckill.entity.input.CreateOrderInput;
-import com.seckill.entity.input.QueryOrderDetailInput;
 import com.seckill.entity.vo.ReturnMsgVo;
 import com.seckill.service.IOrderService;
 import org.springframework.stereotype.Service;
@@ -15,12 +14,12 @@ import org.springframework.stereotype.Service;
 public class OrderServiceImpl implements IOrderService {
 
     @Override
-    public ReturnMsgVo createOrder(CreateOrderInput input) {
+    public ReturnMsgVo OrderCheck(CreateOrderInput input) {
         return null;
     }
 
     @Override
-    public ReturnMsgVo queryOrderDetail(QueryOrderDetailInput input) {
+    public ReturnMsgVo createOrder(CreateOrderInput input) {
         return null;
     }
 }
