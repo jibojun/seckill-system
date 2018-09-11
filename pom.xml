@@ -12,8 +12,6 @@
     <modules>
         <module>seckill-web</module>
         <module>seckill-service</module>
-        <module>seckill-mq</module>
-        <module>seckill-cache</module>
         <module>seckill-entity</module>
     </modules>
 
