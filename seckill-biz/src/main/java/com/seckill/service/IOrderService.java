@@ -11,15 +11,16 @@ import com.seckill.entity.vo.ReturnMsgVo;
  */
 public interface IOrderService {
     /**
-     * create order
-     */
-    ReturnMsgVo createOrder(CreateOrderInput input);
-
-    /**
-     * get order detail
+     * order check, determine where the seckill is successful
      *
      * @return
      */
-    ReturnMsgVo queryOrderDetail(QueryOrderDetailInput input);
+    ReturnMsgVo OrderCheck(QueryOrderDetailInput input);
+
+    /**
+     * create order for successful seckill
+     */
+    ReturnMsgVo createOrder(CreateOrderInput input);
+
 
 }
