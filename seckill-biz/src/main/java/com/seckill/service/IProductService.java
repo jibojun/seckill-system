@@ -8,6 +8,6 @@ import com.seckill.entity.vo.ReturnMsgVo;
  * @Description:
  * @Date: 2018/7/22_2:02 AM
  */
-public interface ProductService {
+public interface IProductService {
     ReturnMsgVo queryProduct(QueryProductInput queryProductInput);
 }

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * @Date: 2018/7/22_2:01 AM
  */
 @Service
-public class IOrderServiceImpl implements IOrderService {
+public class OrderServiceImpl implements IOrderService {
 
     @Override
     public ReturnMsgVo createOrder(CreateOrderInput input) {

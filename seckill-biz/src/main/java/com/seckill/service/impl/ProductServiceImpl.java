@@ -3,8 +3,7 @@ package com.seckill.service.impl;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.seckill.entity.input.QueryProductInput;
 import com.seckill.entity.vo.ReturnMsgVo;
-import com.seckill.service.ProductService;
-import com.seckill.service.backend.api.IProductService;
+import com.seckill.service.IProductService;
 import com.seckill.service.backend.api.ProductInfo;
 import com.seckill.service.log.LogUtil;
 import org.springframework.stereotype.Service;
@@ -15,9 +14,9 @@ import org.springframework.stereotype.Service;
  * @Date: 2018/8/12_1:19 AM
  */
 @Service
-public class ProductServiceImpl implements ProductService {
+public class ProductServiceImpl implements IProductService {
     @Reference
-    private IProductService productService;
+    private com.seckill.service.backend.api.IProductService IProductService;
 
     /**
      * get product info from service interface
@@ -35,7 +34,7 @@ public class ProductServiceImpl implements ProductService {
             LogUtil.logError(this.getClass(), "the request is null");
             return tmpResult;
         }
-        ProductInfo productInfo = productService.queryProductInfo(queryProductInput.getProductId());
+        ProductInfo productInfo = IProductService.queryProductInfo(queryProductInput.getProductId());
         if (productInfo != null) {
             LogUtil.logInfo(this.getClass(), String.format("product: %s, get data successfully, product detail: %s", queryProductInput, productInfo));
             tmpResult.setErrorMessage(null);
