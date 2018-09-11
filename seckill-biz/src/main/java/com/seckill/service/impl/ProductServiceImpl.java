@@ -21,7 +21,7 @@ public class ProductServiceImpl implements IProductService {
     /**
      * get product info from service interface
      *
-     * @param queryProductInput
+     * @param queryProductInput query product input from front end
      * @return
      */
     @Override
