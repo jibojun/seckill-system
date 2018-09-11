@@ -9,7 +9,7 @@ import com.seckill.entity.vo.ReturnMsgVo;
  * @Description:
  * @Date: 2018/7/15_11:13 PM
  */
-public interface OrderService {
+public interface IOrderService {
     /**
      * create order
      */
