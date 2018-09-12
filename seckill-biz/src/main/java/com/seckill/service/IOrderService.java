@@ -9,15 +9,9 @@ import com.seckill.entity.vo.ReturnMsgVo;
  * @Date: 2018/7/15_11:13 PM
  */
 public interface IOrderService {
-    /**
-     * order check, determine where the seckill is successful
-     *
-     * @return
-     */
-    ReturnMsgVo OrderCheck(CreateOrderInput input);
 
     /**
-     * create order for successful seckill, async, send message to kafka
+     * create order and get result
      */
     ReturnMsgVo createOrder(CreateOrderInput input);
 
