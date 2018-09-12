@@ -34,10 +34,12 @@ public class ReturnMsgVo<T> {
         this.result = result;
     }
 
+    @SuppressWarnings("unchecked")
     public static ReturnMsgVo createFailedResult(String errorMessage) {
         ReturnMsgVo returnMsgVo = new ReturnMsgVo();
         returnMsgVo.setErrorMessage(errorMessage);
         returnMsgVo.setResult(false);
+        returnMsgVo.setResponse(false);
         return returnMsgVo;
     }
 
