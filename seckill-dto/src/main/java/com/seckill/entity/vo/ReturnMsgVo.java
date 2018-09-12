@@ -40,4 +40,12 @@ public class ReturnMsgVo<T> {
         returnMsgVo.setResult(false);
         return returnMsgVo;
     }
+
+    @SuppressWarnings("unchecked")
+    public static <T> ReturnMsgVo createSuccessfulResult(T response) {
+        ReturnMsgVo returnMsgVo = new ReturnMsgVo();
+        returnMsgVo.setResult(true);
+        returnMsgVo.setResponse(response);
+        return returnMsgVo;
+    }
 }
