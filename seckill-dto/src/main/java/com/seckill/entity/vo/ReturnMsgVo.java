@@ -33,4 +33,11 @@ public class ReturnMsgVo<T> {
     public void setResult(boolean result) {
         this.result = result;
     }
+
+    public static ReturnMsgVo createFailedResult(String errorMessage) {
+        ReturnMsgVo returnMsgVo = new ReturnMsgVo();
+        returnMsgVo.setErrorMessage(errorMessage);
+        returnMsgVo.setResult(false);
+        return returnMsgVo;
+    }
 }
