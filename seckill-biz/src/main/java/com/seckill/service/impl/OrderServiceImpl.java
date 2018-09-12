@@ -13,10 +13,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderServiceImpl implements IOrderService {
 
-    @Override
-    public ReturnMsgVo OrderCheck(CreateOrderInput input) {
-        return null;
-    }
 
     @Override
     public ReturnMsgVo createOrder(CreateOrderInput input) {
