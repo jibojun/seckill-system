@@ -1,5 +1,6 @@
 package com.seckill.service.lock;
 
+
 import com.seckill.service.cache.redis.RedisUtil;
 
 import java.util.concurrent.TimeUnit;
@@ -11,9 +12,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class RedisDistributionLock extends AbstractDistributionLock {
     //lock name, also the ket for redis cache
-    protected String lockName;
+    private String lockName;
     //expire time for the lock
-    protected long lockExpireTime;
+    private long lockExpireTime;
 
     private RedisDistributionLock() {
     }
