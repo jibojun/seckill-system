@@ -8,18 +8,19 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>war</packaging>
 
     <artifactId>seckill-web</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.seckill</groupId>
-            <artifactId>seckill-entity</artifactId>
+            <artifactId>seckill-dto</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.seckill</groupId>
-            <artifactId>seckill-service</artifactId>
+            <artifactId>seckill-biz</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
