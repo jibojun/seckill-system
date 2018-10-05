@@ -2,10 +2,9 @@ package com.seckill.web.controller;
 
 import com.seckill.entity.input.CreateOrderInput;
 import com.seckill.entity.input.QueryProductInput;
-import com.seckill.entity.input.QueryOrderDetailInput;
 import com.seckill.entity.vo.ReturnMsgVo;
-import com.seckill.service.ProductService;
-import com.seckill.service.OrderService;
+import com.seckill.service.IOrderService;
+import com.seckill.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,10 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/seckill")
 public class OrderController {
     @Autowired
-    private OrderService orderService;
+    private IOrderService orderService;
 
     @Autowired
-    private ProductService productService;
+    private IProductService productService;
 
     /**
      * create order
@@ -32,18 +31,18 @@ public class OrderController {
      */
     @RequestMapping("createOrder")
     public ReturnMsgVo createOrder(@RequestBody CreateOrderInput createOrderInput) {
-        return null;
+        return orderService.createOrder(createOrderInput);
     }
 
-    /**
-     * async, get create order result, other request sent by front end to get result based on order id
-     *
-     * @return create order result
-     */
-    @RequestMapping("queryOrderDetail")
-    public ReturnMsgVo queryOrderDetail(@RequestBody QueryOrderDetailInput queryOrderDetailInput) {
-        return null;
-    }
+//    /**
+//     * async, get create order result, other request sent by front end to get result based on order id
+//     *
+//     * @return create order result
+//     */
+//    @RequestMapping("queryOrderDetail")
+//    public ReturnMsgVo queryOrderDetail(@RequestBody QueryOrderDetailInput queryOrderDetailInput) {
+//        return null;
+//    }
 
     /**
      * query item info
